@@ -1,0 +1,199 @@
+body{
+    overflow: hidden;
+}
+.header-bg{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.7)),url(/img/hero-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.header-text span{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+/* .header-text h3::after{
+content: "";
+border-right: 1px solid #fff;
+animation: type 2s infinite,border-text 500ms infinite;
+}
+@keyframes type {
+    0%{content: "D";}
+    10%{content: "De";}
+    20%{content: "Dev";}
+    30%{content: "Deve";}
+    40%{content: "Devel";}
+    50%{content: "Develo";}
+    60%{content: "Develop";}
+    70%{content: "Develope";}
+    80%{content: "Developer";}
+
+}
+@keyframes border-text {
+    0%{border-color: transparent;}
+    50%{border-color: #fff;}
+    100%{border-color: transparent;}
+    
+} */
+.stat{
+    background: linear-gradient(rgba(0,77,255,.7),rgba(0,77,255,.6)),url(/img/counters-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.underline::after{
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 3px;
+    background-color: #0078ff;
+    left: 0;
+    bottom: -10px;
+    
+   
+}
+.line-mf{
+    width: 40px;
+    height: 5px;
+    background-color: #0078ff;
+    margin: .5rem auto;
+}
+.icon{
+width: 80px;
+height: 80px;
+transition: all .3s;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+box-shadow:0 0 0 10px #0078ff;
+border-radius: 50%;
+margin: .3rem auto;
+font-size: 2rem;
+}
+
+.card:hover .icon{
+    box-shadow:0 0 0 10px rgba(0,0,0,.1);
+    color: #fff;
+    background-color: #0078ff;
+}
+.ico-circle{
+    width: 80px;
+height: 80px;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+box-shadow:0 0 0 10px rgba(255,255,255,.5);
+border-radius: 50%;
+margin: .9rem auto;
+font-size: 2rem;
+}
+.work{
+    background: linear-gradient(rgba(0,77,255,.3),rgba(0,77,255,.4)),url(/img/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.badge{
+    top: -15px;
+    left:  50%;
+    font-size: 1.3rem;
+   
+}
+.ico-list {
+    list-style-type: none;
+    padding: 0;
+
+}
+.card img{
+    transition: .2s all;
+}
+.inner:hover .card img{
+    transform: scale(1.2);
+}
+#upBtn{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 9999999999;
+    display: none;
+}
+
+
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .load{
+      width: 100%;
+      height: 100vh;
+      background-color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  #option{
+      position: fixed;
+      top: 200px;
+      left: -215px;
+      display: flex;
+      align-self: start;
+      z-index: 9999999;
+  }
+  #toggleColor{
+      background-color: #ddd;
+      padding: 10px;
+      height: 100%;
+      cursor: pointer;
+  }
+  #option #color-option{
+      background-color: #fff;
+      padding: 10px;
+      
+  }
+  #option .content{
+      display: flex;
+      justify-content: space-around;
+  }
+  #option .color-item{
+      width: 30px;
+      height: 30px;
+      background-color: red;
+      display: inline-block;
+      cursor: pointer;
+  }
+  
