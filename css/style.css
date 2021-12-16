@@ -3,7 +3,7 @@ body{
 }
 .header-bg{
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.7)),url(img/hero-bg.jpg);
+    background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.7)),url(../img/hero-bg.jpg);
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
@@ -36,7 +36,7 @@ animation: type 2s infinite,border-text 500ms infinite;
     
 } */
 .stat{
-    background: linear-gradient(rgba(0,77,255,.7),rgba(0,77,255,.6)),url(img/counters-bg.jpg);
+    background: linear-gradient(rgba(0,77,255,.7),rgba(0,77,255,.6)),url(../img/counters-bg.jpg);
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
@@ -90,7 +90,7 @@ margin: .9rem auto;
 font-size: 2rem;
 }
 .work{
-    background: linear-gradient(rgba(0,77,255,.3),rgba(0,77,255,.4)),url(img/overlay-bg.jpg);
+    background: linear-gradient(rgba(0,77,255,.3),rgba(0,77,255,.4)),url(../img/overlay-bg.jpg);
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;

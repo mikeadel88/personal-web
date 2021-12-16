@@ -1,12 +1,12 @@
 
  $(window).scroll(function(){
-        if($(window).scrollTop() > $("#sec1").offset().top-100){
+        if($(this).scrollTop() > $("#sec1").offset().top-100){
             $(".navbar").css("backgroundColor","rgba(0,0,0,0.9)")
             $("#upBtn").fadeIn(500)
         }
         else{
             $(".navbar").css("backgroundColor","transparent")
-            $("#upBtn").fadeOut(1000)
+            $("#upBtn").fadeOut(500)
 
         }
     })
@@ -14,7 +14,7 @@
     $("#upBtn").click(backToTop)
 
     function backToTop(){
-        $("html,body").animate({"scrollTop":"0"},500)
+        $("html,body").animate({"scrollTop":"0"},400)
     }
     $(".nav-link").click(function(e){
         let getid=$(e.target).attr("href")
